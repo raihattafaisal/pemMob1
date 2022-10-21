@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/purple_700"
+        android:text="@string/textLogin"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txUsername"
+        android:layout_below="@+id/tvLogin"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+    <EditText
+        android:id="@+id/txPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txUsername"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/txPassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Login"
+        android:textColor="@color/orange"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvKetr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Belum Punya Akun?"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="Daftar"
+        android:textColor="@color/biru"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
